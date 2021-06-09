@@ -1,0 +1,17 @@
+#!/usr/local/python3/bin/python3
+
+'''
+Start the nagent 
+'''
+
+import nexusagent 
+
+def main():
+    '''The main function
+
+    '''
+    master = nexusagent.Manager()
+    master.start()
+
+if __name__ == '__main__':
+    main()

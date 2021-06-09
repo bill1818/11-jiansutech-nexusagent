@@ -1,0 +1,65 @@
+#####         Logging settings       #####
+###########################################
+
+log_file: /var/log/nagent.log
+log_level: INFO
+
+
+port: 5017
+listen: '0.0.0.0'
+
+
+######         Start settings         #####
+###########################################
+
+
+#####         Cmdb  settings         #####
+##########################################
+
+cmdb_user: api
+cmdb_password: ZGZzZGZkc2YjQCUjQCUjQCMK
+cmdb_url: https://ap.lmops.com
+
+
+#####         nexus                  #####
+##########################################
+
+nexus_office: 'http://nexus.intranet.huiyin.com'
+nexus_user: admin
+nexus_password: admin123
+
+
+nexus_remote:
+        #  sp: 
+        #nexus_url: 'https://nexus.lmops.com'
+        #nexus_group:
+        # - org.springfans
+        # nexus_repository: 
+        # - maven-releases
+      #- maven-snapshots
+  atoken:
+    nexus_url: 'https://nexus-china.lmops.com'
+    nexus_group:
+      - com.atoken
+    nexus_repository: 
+      - maven-releases
+  czt:
+    nexus_url: 'https://nexus-china.lmops.com'
+    nexus_group:
+      - com.czt
+    nexus_repository: 
+      - maven-releases
+  walletguard:
+    nexus_url: 'https://nexus-china.lmops.com'
+    nexus_group:
+      - org.walletguard
+    nexus_repository: 
+      - maven-releases
+      #- maven-snapshots
+      #  walletguard:
+      #nexus_url: 'https://nexus.lmops.com'
+      #nexus_group:
+      # - org.walletguard
+      #nexus_repository: 
+      #  - maven-releases
+      #- maven-snapshots
